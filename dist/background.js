@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener(((e,t,r)=>{e.darkPatternDetected&&(console.log(`Dark Pattern Detected: ${e.patternType}`),chrome.notifications.create({type:"basic",iconUrl:"icon.png",title:`Dark Pattern Alert: ${e.patternType}`,message:`Details: ${e.detail}`,priority:2}))}));
